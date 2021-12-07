@@ -113,21 +113,40 @@ $(function() {
   var data = [
     {
       action: 'type',
-      strings: ["Accessing restricted files.."],
-      output: 'grabbing files..<br><br>',
+      strings: ["kubectl run merhaba --image=techakademi/merhabadunyakube:1"],
+      output: '<br>',
       postDelay: 1000
+    },
+    {
+      action: 'type',
+      strings: ["curl http://172.17.0.113:8000"],
+      output: '<h4>Merhaba Dünya :)</h4>',
+      postDelay: 2000
     },
   { 
     action: 'type',
-    strings: ["500 Internal Error"],
-    output: '<span class="gray">Coded by cluzier +CodePen.io</><br>&nbsp;',
+    strings: ["Kubernetes öğren"],
+    output: 'www.youtube.com/hamzagurcan</><br>&nbsp;',
     postDelay: 1000
   },
   { 
     action: 'type',
-    strings: ["These are not the error codes you're looking for.", 'Please either report this error to an administrator or return back and forget you were here...'],
-    postDelay: 2000
-  }
+    strings: ["Hakkımda"],
+    output: 'https://about.me/hamzagurcan</><br>&nbsp;',
+    postDelay: 1500
+  },
+  { 
+    action: 'type',
+    strings: ["İletişime geçmek istersen,", 'techakademi@gmail.com adresine mail göndermen yeterlidir :)'],
+    output: '<br>',
+    postDelay: 3000
+  },
+
+  { 
+    action: 'type',
+    strings: ["Görüşmek üzere, Hoşçakal"],
+    postDelay: 1500
+  },
   
 ];
   runScripts(data, 0);
